@@ -33,10 +33,7 @@
             } else {
                 HowMannyOpenning--;
                 char lastOpening = arr[HowMannyOpenning];
-                if (CurrentThing == ')' && lastOpening != '(' ||
-                    CurrentThing == ']' && lastOpening != '[' ||
-                    CurrentThing == '}' && lastOpening != '{') { //Self explenatory
-
+                if (CurrentThing == ')' && lastOpening != '(' || CurrentThing == ']' && lastOpening != '[' || CurrentThing == '}' && lastOpening != '{') { //Self explenatory
                     System.out.println(false); 
                     return;
                 }

@@ -1,6 +1,6 @@
 
 
-public class MMMain {//sometimes my genies spook me
+public class MMMain {
     static void mergingNSorting(int[] a) {
         //It actially devide by block.
         for (int currentSize = 1; currentSize < a.length; currentSize *= 2) {

@@ -1,4 +1,4 @@
-public class MMain {//I got no better Idea
+public class MMain {
 
     public static int removeElementInplace(int[] arr, int val) { // here our glorios method
         int curent = 0;

@@ -15,3 +15,5 @@ public class MMMMain {
 пузырьковый метод устойчив
 быстрая сортировка нет
 */
+
+//INTERIA та что от JetBrains

@@ -25,23 +25,24 @@ public class StudentSort implements Sorting<Student> {
         int i = 0, j = 0, k = 0;
         //i - left index j - right index k - helping index
         while (i < left.size() && j < right.size()) {
-            int ccv; // ccv - Curent Comparable Varuable, beause not only number
+            int ccv; // ccv - Curent Comparable Varuable, beause not only "number" (age)
             if (sortByAge) { //If we compare by age
                 ccv = Integer.compare(left.get(i).getAge(), right.get(j).getAge());
             } else { //if we compare by name
                 ccv = left.get(i).getName().compareTo(right.get(j).getName());
+                //By compareTo we check Names and get back Integer (by how "Smaller" the name is) so no need additional переменная (да я на этот раз забыл это слово)
             }
-            if (ccv <= 0) {
+            if (ccv <= 0) { //Move to respcted side
                 list.set(k++, left.get(i++));
             } else {
                 list.set(k++, right.get(j++));
             }
         }
 
-        while (i < left.size()) {
+        while (i < left.size()) { //what left in left
             list.set(k++, left.get(i++));
         }
-        while (j < right.size()) {
+        while (j < right.size()) { // what left in right
             list.set(k++, right.get(j++));
         }
     }

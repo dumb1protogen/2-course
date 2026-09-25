@@ -1,4 +1,4 @@
-public class Student {
+public class Student implements Comparable<Student> {
     private final String name;
     private final int age;
 
@@ -15,8 +15,8 @@ public class Student {
         return age;
     }
 
-    @Override // I spend 2 days, I tired, I have no ideas
-    public String toString() {
-        return name + " " + age;
+    @Override //I have no idea at this point.
+    public int compareTo(Student other) {
+        return this.name.compareTo(other.name);
     }
 }

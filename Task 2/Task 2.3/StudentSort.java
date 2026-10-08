@@ -6,8 +6,8 @@ public class StudentSort implements Sorting<Student> {
     @Override
     public void sort(List nums) {
         List<Student> students = (List<Student>) nums;
-        mergeSort(students, true);// sorting by age
-        mergeSort(students, false); // sorting by name
+        mergeSort(students, false);// sorting by age
+        mergeSort(students, true); // sorting by name
     }
     private static void mergeSort(List<Student> list, boolean sortByAge) {
         if (list.size() <= 1) {//check if need compatr

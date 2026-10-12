@@ -1,6 +1,6 @@
-public class BubbleSort<T extends Comparable<T extends InsertionSort<T extends MergeSort<T>> implements Sorting<T> {
-    @Override
-    public void sort(List<T> list) {
-        //I get it right?
-    }
+import java.util.List;
+
+public interface Sorting<T> {
+    void sort(List<T> list);
+    //
 }

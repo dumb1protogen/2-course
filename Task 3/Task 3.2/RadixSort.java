@@ -45,7 +45,10 @@ public class RadixSort implements Sorting {
             for (int i = 0; i < n; i++) {
                 nums.set(i, temp[i]); //god
             }
-            divisor = divisor.multiply(ten);
+            divisor = divisor.multiply(ten); //.reminder()
         }
     }
 }
+// передовать не list а biginterger
+// просто вставь 20, не забывай про не знасчиющие 0
+// divisor через .reminder

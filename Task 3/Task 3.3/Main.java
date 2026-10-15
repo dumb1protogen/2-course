@@ -2,7 +2,7 @@ import java.time.LocalDateTime; //Im not sure if its right
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.UUID; //Same as Local Time, I just had to write with or withought librarys?
+import java.util.UUID; //Same as Local Time, I just had to write with or without librarys?
 
 public class Main {
 
@@ -10,7 +10,7 @@ public class Main {
         InsertionSort<Integer> integerSort = new InsertionSort<>();
         InsertionSort<String> stringSort = new InsertionSort<>();
         InsertionSort<LocalDateTime> dateTimeSort = new InsertionSort<>();
-        //InsertionSort<Student> studentSort = new InsertionSort<>(); TODO - LAter
+        InsertionSort<Student> studentSort = new InsertionSort<>();
         InsertionSort<UUID> uuidSort = new InsertionSort<>();
         //Numbers
         List<Integer> numbers = new ArrayList<>(
@@ -18,11 +18,11 @@ public class Main {
         );
         integerSort.sort(numbers);
         System.out.println(numbers);
-        System.out.println(" ");
+        System.out.println(" "); //TODO check if you can use /n or something similar
 
         // Words
         List<String> strings = new ArrayList<>(
-                Arrays.asList("Orange", "Apple", "Banana", "Cherry")
+                Arrays.asList("Beta", "Gamma", "Alpha", "Vasili", "Beep", "Boop", "WhatDoesTheFoxSays")
         );
         stringSort.sort(strings);
         System.out.println(strings);
@@ -42,8 +42,8 @@ public class Main {
         System.out.println(" ");
 
 
+
         // Student
-        /*
         List<Student> students = new ArrayList<>(
                 Arrays.asList(
                         new Student("Vasa", 26),
@@ -51,10 +51,16 @@ public class Main {
                         new Student("Bob", 21)
                 )
         );
+
         studentSort.sort(students);
-        System.out.println(students);
-        System.out.println(" ");
-        */ //Ill do it later
+        //System.out.println(students);
+        for (Student student : students) {
+            System.out.print(
+                    student.getName() + " " + student.getAge() + " "
+            );
+        }
+        System.out.println();
+
 
         // UUID
         List<UUID> uuids = new ArrayList<>(

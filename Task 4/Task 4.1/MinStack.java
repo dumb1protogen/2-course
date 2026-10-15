@@ -7,3 +7,6 @@ public interface MinStack<T extends Number> {
 
     T min();
 }
+
+//All avaliable commands that was given in our task
+//Why I commented that?

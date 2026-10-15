@@ -4,7 +4,7 @@ import java.util.List;
 public class RadixSort implements Sorting {
 
     @Override
-    public void sort(List nums) {
+    public void sort(biginterger nums) {
         int n = nums.size();
         if (n <= 1) {
             return; //nothing to sort
@@ -13,7 +13,7 @@ public class RadixSort implements Sorting {
 
         for (Object obj : nums) {
             BigInteger number = (BigInteger) obj;
-            maxNumbers = Math.max(maxNumbers, number.toString().length()); // its always 20 numbers, why you did this?
+            maxNumbers = 20
         }
         BigInteger[] temp = new BigInteger[n];
         BigInteger ten = BigInteger.TEN;
@@ -49,6 +49,6 @@ public class RadixSort implements Sorting {
         }
     }
 }
-// передовать не list а biginterger
-// просто вставь 20, не забывай про не знасчиющие 0
-// divisor через .reminder
+// передовать не list а biginterger(TODO test later if you did this correct)
+// просто вставь 20, не забывай про не знасчиющие 0 (DONE)
+// TODO divisor через .reminder

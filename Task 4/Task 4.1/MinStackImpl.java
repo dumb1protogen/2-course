@@ -28,4 +28,5 @@ public class MinStackImpl implements MinStack<Integer> {
         return head.minValue; //Just saying who lowest
     }
 }
+// Нет проверки на null, если посылают коректные команды, не значит что не могуть послать ничего
 //All of this is O(n), we check our Stack for all those operatons one time of N where N is amount of numbers in our Stack

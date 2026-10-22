@@ -24,3 +24,4 @@ public interface HashMap<K, V> {
      */
     V delete(K key);
 }
+//и так сойдет, че трогать :D

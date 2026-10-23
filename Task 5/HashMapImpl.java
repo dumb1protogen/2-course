@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.Iterator;
 //God curse (or bless) those libraries
 public class HashMapImpl<V> implements HashMap<String, V> {
     private static final int TABLE_SIZE = 300007;
